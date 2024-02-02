@@ -9,8 +9,19 @@ console.log('*** Assurance vie ***');
 /**
  * 1) Créez une variable money, l'initialiser à 10000
  * 2) Créez une boucle for qui multiplie money par 1.02 tous les 6 mois pendant 30 ans
- * 3) Afficher le résultat
+ * 3) Afficher le résultat 
  */
+
+
+// Création de la variable money et initialisation à 10000
+let money = 10000;
+
+// Boucle for qui multiplie money par 1.02 tous les 6 mois pendant 30 ans (60 périodes de 6 mois)
+for (let i = 0; i < 60; i++) {
+    money *= 1.02;
+}
+
+console.log("Le montant après 30 ans est de : " + money.toFixed(0));
 
 /**========================================================================
  *                           Paires
